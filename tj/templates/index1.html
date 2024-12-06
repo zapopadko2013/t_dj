@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Авторизация</title>
+</head>
+<body>
+    <h2>Ввод кода</h2>
+    <form method="post" action="postcode/">
+        {% csrf_token %}
+        <p>Телефон:<br> <input name="phone" value="{{ phone }}" /></p>
+        <p>Код:<br> <input name="code" value="{{ code }}" /></p>
+        <input type="submit" value="Войти" />
+    </form>
+</body>
+</html>
