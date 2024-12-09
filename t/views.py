@@ -1,4 +1,6 @@
-#from django.shortcuts import render
+from django.shortcuts import render
+
+# Create your views here.
 
 from django.http import HttpResponse
 from .models import User
@@ -9,7 +11,7 @@ from django.http import JsonResponse
 import string
 from django.views.decorators.csrf import csrf_exempt
 import json
-from tj.genpassw import generate_random_password
+from t.genpassw import generate_random_password
 
   
 
